@@ -9,4 +9,9 @@ public class HelloController {
     public String hello() {
         return "Hello CI/CD";
     }
+
+@GetMapping("/testwebhook")
+    public String webhooktest() {
+        return "auto triggered using webhook";
+    }
 }
