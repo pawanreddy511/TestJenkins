@@ -1,11 +1,7 @@
-# Use Java base image
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk
 
-# Set working directory
 WORKDIR /app
 
-# Copy jar file
-COPY target/*.jar app.jar
+COPY TestingJenkins/target/*.jar app.jar
 
-# Run the app
 ENTRYPOINT ["java", "-jar", "app.jar"]
