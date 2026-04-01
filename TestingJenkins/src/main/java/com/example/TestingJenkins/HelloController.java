@@ -15,7 +15,7 @@ public class HelloController {
         return "auto triggered using webhook";
     }
 
-    @GetMapping("/testwebhook")
+    @GetMapping("/testwebhook2")
     public String Jenkinstest() {
         return "auto triggered using webhook and build in jenkins is triggered";
     }
